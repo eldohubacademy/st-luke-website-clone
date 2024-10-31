@@ -61,6 +61,12 @@ header .dropdown-list {
   background-color: white;
   padding: 10px;
 }
+header .dropdown-list li {
+  margin-bottom: 17px;
+}
+header .dropdown-list:hover {
+  display: block;
+}
 #caret {
   display: inline-block;
   transform: rotate(90deg);
