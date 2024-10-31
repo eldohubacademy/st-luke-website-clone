@@ -1,0 +1,80 @@
+/* resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* contacts banner */
+.contacts-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+header > a:first-child {
+  display: flex;
+  gap: 12px;
+}
+header img {
+  height: 30px;
+}
+header h1 {
+  font-size: 25px;
+}
+header li {
+  position: relative;
+}
+header nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+header .dropdown-menu:hover {
+  cursor: pointer;
+}
+header .dropdown-list {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 95%;
+  left: 0px;
+  width: max-content;
+  background-color: white;
+  padding: 10px;
+}
+#caret {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+#dropdown-menu:hover + .dropdown-list {
+  display: block;
+}
+header nav a {
+  padding: 12px;
+}
+header nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-color: blue;
+}
+
+/* main */
