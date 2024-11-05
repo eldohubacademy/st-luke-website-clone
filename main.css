@@ -20,13 +20,16 @@ a {
   align-items: center;
   padding: 10px 20px;
 }
+.socials a {
+  margin: 0px 10px;
+}
 
 /* header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 60px;
   position: sticky;
   top: 0px;
   background-color: white;
@@ -75,12 +78,140 @@ header .dropdown-list:hover {
   display: block;
 }
 header nav a {
-  padding: 12px;
+  padding: 8px;
 }
 header nav a:hover {
   text-decoration: underline;
   text-underline-offset: 12px;
-  text-decoration-color: blue;
+  text-decoration-color: #0d6efd;
 }
 
+.cta-blue {
+  background-color: #0d6efd;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+#mobile-menu {
+  background-color: transparent;
+  border: none;
+}
+#mobile-menu ion-icon {
+  font-size: 25px;
+}
 /* main */
+/* hero section */
+.hero {
+  height: 80vh;
+  padding: 20px 60px;
+  background-image: url(./images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hero h2 {
+  color: white;
+  margin-top: 200px;
+}
+.hero .cta-blue {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* why us  */
+.why-us {
+  padding: 20px 60px;
+}
+.why-us-content {
+  display: flex;
+  gap: 25px;
+  margin-top: -150px;
+}
+.blue-intro {
+  width: calc(30% - 10px);
+  background-color: #647cdd;
+  color: white;
+  padding: 23px;
+  border-radius: 5px;
+}
+.blue-intro h2 {
+  margin-bottom: 20px;
+}
+.blue-intro a {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+.reasons {
+  width: calc(70% - 10px);
+  display: flex;
+  gap: 25px;
+}
+.reason {
+  background-color: white;
+  box-shadow: 0px 0px 3px grey;
+  flex: 1;
+  text-align: center;
+  padding: 23px;
+  border-radius: 11px;
+}
+.reason h3 {
+  margin: 20px 0px;
+}
+.reason ion-icon {
+  color: #647cdd;
+  font-size: 30px;
+}
+/* about us section */
+.about-us {
+  padding-right: 60px;
+}
+.about-us h2 {
+  width: fit-content;
+
+  text-align: center;
+  border-bottom: 2px solid #647cdd;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+.about-content {
+  display: flex;
+  gap: 20px;
+}
+.about-content p {
+  color: rgb(36, 36, 36);
+}
+.about-text > div {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.about-text > div ion-icon {
+  color: #647cdd;
+  /* border: 1px solid #647cdd; */
+  font-size: 100px;
+  padding: 20px;
+}
+.about-text > div ion-icon:hover {
+  background-color: #647cdd;
+  color: white;
+}
+/* media queries */
+@media (max-width: 992px) {
+  .socials {
+    display: none;
+  }
+  header #main-nav ul > li:not(.mobile-visible) {
+    display: none;
+  }
+}
+
+@media (max-width: 1124px) {
+  .reasons {
+    flex-direction: column;
+  }
+}
